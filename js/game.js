@@ -38,8 +38,6 @@ function handleClick(event) {
 }
 
 function init() {
-//    round();
-//    $(".game-field").click(handleClick);
     $("#button-start").click(function() {
         hits = 0;
         firstHitTime = 0;
