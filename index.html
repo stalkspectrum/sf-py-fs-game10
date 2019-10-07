@@ -1,66 +1,62 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ru">
-  <head>
+<head>
+    <title>PWS A6 HW</title>
     <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/game.css">
+</head>
+<body>
+    <h1>10 квадратов</h1>
+    <div id="gamedesk" class="game-grid">
+        <div id="slot-11" class="game-field"></div>
+        <div id="slot-12" class="game-field"></div>
+        <div id="slot-13" class="game-field"></div>
+        <div id="slot-14" class="game-field"></div>
+        <div id="slot-15" class="game-field"></div>
+        <div id="slot-16" class="game-field"></div>
+        <div id="slot-21" class="game-field"></div>
+        <div id="slot-22" class="game-field"></div>
+        <div id="slot-23" class="game-field"></div>
+        <div id="slot-24" class="game-field"></div>
+        <div id="slot-25" class="game-field"></div>
+        <div id="slot-26" class="game-field"></div>
+        <div id="slot-31" class="game-field"></div>
+        <div id="slot-32" class="game-field"></div>
+        <div id="slot-33" class="game-field"></div>
+        <div id="slot-34" class="game-field"></div>
+        <div id="slot-35" class="game-field"></div>
+        <div id="slot-36" class="game-field"></div>
+        <div id="slot-41" class="game-field"></div>
+        <div id="slot-42" class="game-field"></div>
+        <div id="slot-43" class="game-field"></div>
+        <div id="slot-44" class="game-field"></div>
+        <div id="slot-45" class="game-field"></div>
+        <div id="slot-46" class="game-field"></div>
+        <div id="slot-51" class="game-field"></div>
+        <div id="slot-52" class="game-field"></div>
+        <div id="slot-53" class="game-field"></div>
+        <div id="slot-54" class="game-field"></div>
+        <div id="slot-55" class="game-field"></div>
+        <div id="slot-56" class="game-field"></div>
+        <div id="slot-61" class="game-field"></div>
+        <div id="slot-62" class="game-field"></div>
+        <div id="slot-63" class="game-field"></div>
+        <div id="slot-64" class="game-field"></div>
+        <div id="slot-65" class="game-field"></div>
+        <div id="slot-66" class="game-field"></div>
+    </div>
 
-    <title>PWS A6 HW</title>
-
-
-  </head>
-  <body>
-
-    <div class="container">
-      <h1>10 квадратов</h1>
-
-      <!-- FIXME: сейчас тут не все слоты, надо добавить нужных -->
-      <div class="row">
-        <div class="col game-field align-text-bottom" id="slot-11"></div>
-        <div class="col game-field align-text-bottom" id="slot-12"></div>
-        <div class="col game-field align-text-bottom" id="slot-13"></div>
-        <div class="col game-field align-text-bottom" id="slot-15"></div>
-        <div class="col game-field align-text-bottom" id="slot-16"></div>
-      </div>
-      <div class="row">
-        <div class="col game-field align-text-bottom" id="slot-21"></div>
-        <div class="col game-field align-text-bottom" id="slot-22"></div>
-        <div class="col game-field align-text-bottom" id="slot-23"></div>
-        <div class="col game-field align-text-bottom" id="slot-24"></div>
-        <div class="col game-field align-text-bottom" id="slot-25"></div>
-        <div class="col game-field align-text-bottom" id="slot-26"></div>
-      </div>
-      <div class="row">
-        <div class="col game-field align-text-bottom" id="slot-31"></div>
-        <div class="col game-field align-text-bottom" id="slot-32"></div>
-        <div class="col game-field align-text-bottom" id="slot-33"></div>
-        <div class="col game-field align-text-bottom" id="slot-34"></div>
-      </div>
-      <div class="row">
-        <div class="col game-field align-text-bottom" id="slot-41"></div>
-        <div class="col game-field align-text-bottom" id="slot-42"></div>
-        <div class="col game-field align-text-bottom" id="slot-44"></div>
-        <div class="col game-field align-text-bottom" id="slot-45"></div>
-        <div class="col game-field align-text-bottom" id="slot-46"></div>
-      </div>
-      <div class="row">
-        <div class="col game-field align-text-bottom" id="slot-61"></div>
-        <div class="col game-field align-text-bottom" id="slot-62"></div>
-        <div class="col game-field align-text-bottom" id="slot-63"></div>
-        <div class="col game-field align-text-bottom" id="slot-64"></div>
-        <div class="col game-field align-text-bottom" id="slot-65"></div>
-        <div class="col game-field" id="slot-66"></div>
-      </div>
-
-      <div id="win-message" class="d-none">
+    <div id="win-message" class="d-none">
         <!-- TODO: можно добавить красные квадратики с отрицательным весом и делать счёт попаданий в конце как разницу очков за попадание минус штрафные -->
         <h2>Вы нашли 10 зелёных квадратов за <span id="total-time-played"></span> секунд</h2>
-      </div>
-      <div class="row">
-        <button id="button-reload" class="btn btn-primary">Играть заново</button>
-      </div>
+    </div>
+    <div class="row">
+        <button id="button-reload" class="btn btn-info buttonview">Обновить игровое поле</button>
+        <button id="button-start" class="btn btn-success buttonview">Начать игру</button>
     </div>
 
 
@@ -68,5 +64,5 @@
     <script src="./js/bootstrap.bundle.min.js"></script>
     <script src="./js/utils.js"></script>
     <script src="./js/game.js"></script>
-  </body>
+</body>
 </html>
