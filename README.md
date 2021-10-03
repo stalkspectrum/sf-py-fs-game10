@@ -27,6 +27,7 @@
 ----
 В `index.html` используется вёрстка на сетке bootstrap, но вам никто не мешает
 использовать cssgrid. Главное, чтобы нужные слоты имели те же айдишники.    
+    
 ----
 3. Ответ опубликован на GitHub Pages    
 [**`https://stalkspectrum.github.io/sf-py-fs-game10/`**](https://stalkspectrum.github.io/sf-py-fs-game10/)    
